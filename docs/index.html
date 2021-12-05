@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home - In the Passing Delight of Holiday</title>
+    <meta name="description" content="pickadate v3 と holiday_jp-js を使った datepicker のサンプル">
+    <meta name="author" content="アルム＝バンド">
+
+    <meta name="theme-color" content="#ccc">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head><body>
+<header class="l-header">
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand my-0" href="./">In the Passing Delight of Holiday</a>
+        </div>
+    </nav>
+</header><main class="l-main">
+    <section class="container pb-5">
+        <nav aria-label="breadcrumb mb-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">pickadate v3 と holiday_jp-js を使った datepicker のサンプル、yubinbango 追加、Babel + Polyfill 追加、と一通り Webpack のバンドルで動くかどうか動作試験をするためのサンプル</li>
+            </ol>
+        </nav>
+        <div class="list-group">
+            <a href="./plain/" class="list-group-item list-group-item-action">プレーン <span class="badge bg-primary">Webpack でビルドした Holiday-jp_js を使った pickadate v3</span></a>
+            <a href="./yubinbango/" class="list-group-item list-group-item-action">郵便番号追加 <span class="badge bg-primary">Webpack でビルドした Holiday-jp_js を使った pickadate v3 + yubinbango</span></a>
+            <a href="./babel/" class="list-group-item list-group-item-action">バベった <span class="badge bg-primary">Webpack でビルドした Holiday-jp_js を使った pickadate v3 + yubinbango に Babel と core-js の Polyfill を追加</span></a>
+          </div>
+    </section>
+</main>
+<footer class="l-footer w-100">
+    <small class="d-block pt-2 pb-3 text-center">© 2021 アルム＝バンド</small>
+</footer></body>
+</html>
