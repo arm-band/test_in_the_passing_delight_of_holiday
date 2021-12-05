@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+<%
+if(parameters.errFlag) {
+-%>
+    <base href="/">
+<%
+}
+-%>
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title><%= parameters.title %> - <%= commons.sitename %></title>
+    <meta name="description" content="<%= parameters.description %>">
+    <meta name="author" content="<%= commons.author %>">
+
+    <link href="./apple-touch-icon.png" rel="apple-touch-icon">
+    <meta name="theme-color" content="<%= commons.themecolor %>">
+
+    <link href="./css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
