@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home - In the Passing Delight of Holiday</title>
+    <meta name="description" content="pickadate v3 と holiday_jp-js を使った datepicker のサンプル">
+    <meta name="author" content="アルム＝バンド">
+
+    <link href="./apple-touch-icon.png" rel="apple-touch-icon">
+    <meta name="theme-color" content="#ccc">
+
+    <link href="./css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head><body>
+<header class="l-header">
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand my-0" href="./">In the Passing Delight of Holiday</a>
+        </div>
+    </nav>
+</header><main class="l-main">
+    <section class="container pb-5">
+        <form action="#" method="post" class="h-adr">
+            <span class="p-country-name" style="display:none;">Japan</span>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="datepick">日付指定</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="datepick" name="datepick" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="postalcode">郵便番号</label>
+                <div class="col-sm-9">
+                    <input type="tel" class="form-control p-postal-code" id="postalcode" name="postalcode" placeholder="001-0000">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="address">住所</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control p-region p-locality p-street-address p-extended-address" id="address" name="address" placeholder="北海道札幌市北区丸山町字辛亥五ノ村30-90">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="comment">コメント</label>
+                <div class="col-sm-9">
+                    <textarea placeholder="pickadate v3 と holiday_jp-js を使った datepicker のサンプル" class="form-control" id="comment" name="comment"></textarea>
+                </div>
+            </div>
+            <div class="form-group row form_footer">
+                <label class="col-sm-3 col-form-label" for="form_simulateButon"></label>
+                <div class="col-sm-9">
+                    <button type="button" class="btn btn-primary" id="form_confirmButton" name="form_confirm"><i class="fas fa-fw fa-paper-plane mr-2" aria-hidden="true"></i>送信する<span class="ml-2">(ダミー)</span></button>
+                    <p class="text-muted">送信機能はないため、ボタンを押しても動作しません。</p>
+                    <p class="text-muted">住所・郵便番号・電話番号はいずれもダミーです。</p>
+                </div>
+            </div>
+        </form>
+    </section>
+</main>
+<footer class="l-footer w-100">
+    <small class="d-block pt-2 pb-3 text-center">© 2021 アルム＝バンド</small>
+</footer><script src="./js/app.min.js" defer></script></body>
+</html>
