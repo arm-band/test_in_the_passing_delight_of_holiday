@@ -5,7 +5,6 @@
         description: 'pickadate v3 と holiday_jp-js を使った datepicker のサンプル',
         address: '北海道札幌市北区丸山町字辛亥五ノ村30-90',
         postalcode: '001-0000',
-        tel: '000-000-0000',
         errFlag: false
     }
 -%>
@@ -14,11 +13,24 @@
 <%- include('partial/_header') -%>
 <main class="l-main">
     <section class="container pb-5">
-        <form action="#" method="post">
+        <form action="#" method="post" class="h-adr">
+            <span class="p-country-name" style="display:none;">Japan</span>
             <div class="form-group row">
                 <label class="col-sm-3 col-form-label" for="datepick">日付指定</label>
                 <div class="col-sm-9">
                     <input type="text" class="form-control" id="datepick" name="datepick" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="postalcode">郵便番号</label>
+                <div class="col-sm-9">
+                    <input type="tel" class="form-control p-postal-code" id="postalcode" name="postalcode" placeholder="<%= parameters.postalcode %>">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="address">住所</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control p-region p-locality p-street-address p-extended-address" id="address" name="address" placeholder="<%= parameters.address %>">
                 </div>
             </div>
             <div class="form-group row">

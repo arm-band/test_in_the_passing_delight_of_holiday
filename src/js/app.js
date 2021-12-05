@@ -4,6 +4,7 @@ import 'pickadate/lib/picker';
 import 'pickadate/lib/picker.date';
 //import 'pickadate/lib/picker.time';
 import * as holiday_jp from '@holiday-jp/holiday_jp';
+import 'yubinbango';
 
 /**
  * weekdayJP
