@@ -30,7 +30,10 @@
         "clean-webpack-plugin": "^4.0.0",
         "cpx": "^1.5.0",
         "mkdirp": "^1.0.4",
-        "npm-run-all": "^4.1.5"
+        "npm-run-all": "^4.1.5",
+        "babel-loader": "^8.2.3",
+        "@babel/core": "^7.16.0",
+        "@babel/preset-env": "^7.16.4"
     },
     "dependencies": {
         "bootstrap": "^4.6.1",
@@ -39,7 +42,8 @@
         "jquery": "^3.6.0",
         "pickadate": "^3.6.4",
         "@holiday-jp/holiday_jp": "^2.3.0",
-        "yubinbango": "git+https://github.com/yubinbango/yubinbango.git#gh-pages"
+        "yubinbango": "git+https://github.com/yubinbango/yubinbango.git#gh-pages",
+        "core-js": "^3.19.2"
     },
     "engines": {
         "node": ">=16.0.0",

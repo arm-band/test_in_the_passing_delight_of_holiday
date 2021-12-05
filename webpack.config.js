@@ -42,7 +42,7 @@ const configs = {
         }),
     ],
     optimization: {
-            minimizer: [
+        minimizer: [
             new webpackTerser({
                 extractComments: 'some',
                 terserOptions: {
@@ -52,9 +52,22 @@ const configs = {
                 },
             }),
         ],
-    }
+    },
+    module: { // 追加
+        rules: [
+            {
+                test: /\.js$/,
+                use: [
+                    {
+                        loader: 'babel-loader',
+                    }
+                ]
+            }
+        ]
+    },
 };
-if (process.env.DEV_MODE === 'dev') {
+
+if (devFlag === 'dev') {
     configs.devtool = 'inline-source-map';
 }
 

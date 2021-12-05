@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import 'bootstrap-honoka/dist/js/bootstrap.bundle';
+import 'core-js';
 import 'pickadate/lib/picker';
 import 'pickadate/lib/picker.date';
 //import 'pickadate/lib/picker.time';
